@@ -15,7 +15,7 @@
 				<div class="col-lg-8">
 					<input type="text" id="search" placeholder="Type to search" autocomplete="on" autofocus class="form-control">
 
-					<p><ul id="myUL" class='list-group'>
+					<p><ul id="myPublications" class='list-group'>
 						<li class="list-group-item"><a href="#">2017</a></li>
 						<li class="list-group-item"><a href="#">Tensor Decomposition</a></li>
 						<li class="list-group-item"><a href="#">Low-Rank Tensor Decomposition</a></li>
@@ -27,6 +27,18 @@
 			</div>
 
 		</div>
+<script>
+var $rows = $('#myPublications li');
+$('#search').keyup(function() {
+    var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+    
+    $rows.show().filter(function() {
+        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+        return text.indexOf(val) == -1;
+    }).hide();
+});
+</script>
+
 	</body>
 </html>
 
