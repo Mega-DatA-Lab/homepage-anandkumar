@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Assistant|Molengo|Hind+Guntur|Quicksand|Martel+Sans|Philosopher');
+p, ul, ol { font-family: 'Hind Guntur', sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Julius Sans One', sans-serif; }
+    </style>
   </head>
   <body>
     <div class="container">
@@ -15,16 +20,15 @@
           <img class="mx-auto d-block" src="img/DP.png" alt="Animashree Anandkumar">
           <h1 class="text-center">Animashree Anandkumar</h1>
           <p> Contact Details </p>
-          <p> V0.15 </p>
+          <p> V0.17 </p>
         </div>
 
         <div class="col-lg-8">
           <h2 id="bio">Bio</h2>
-          <p>I am a faculty at CS department within ICS at University of California Irvine since December 2016. Before that I was a faculty at EECS department at UC Irvine since August 2010. I am a member of the Center for Pervasive Communications and Computing (CPCC).</p>
-          <p>I am currently a Principal Scientist at Amazon Web Services (AWS) and on leave from UC Irvine.</p>
-          <p>My research focus is in the high-dimensional learning of probabilistic graphical models and latent variable models. Broadly I am interested in machine learning, high-dimensional statistics, tensor methods, statistical physics, information theory and signal processing.</p>
+          <p>Anima Anandkumar's research interests are in the areas of large-scale machine learning, non-convex optimization and high-dimensional statistics. In particular, she has been spearheading the development and analysis of tensor algorithms for machine learning. Tensors are multi-dimensional extensions of matrices and can encode higher order relationships in data. Tensor decomposition methods are embarrassingly parallel and scalable to enormous datasets.  More generally, Prof. Anandkumar has been investigating efficient non-convex optimization techniques. At Amazon Web Services, she is researching the practical aspects of deploying machine learning at scale on the cloud infrastructure.</p>
+          <p> She is the recipient of several awards such as the Alfred. P. Sloan Fellowship, Microsoft Faculty Fellowship, Google research award, ARO and AFOSR Young Investigator Awards, NSF Career Award, Early Career Excellence in Research Award at UCI, Best Thesis Award from the ACM Sigmetrics society, IBM Fran Allen PhD fellowship, and several best paper awards. She has been featured in a number of forums such as the Quora ML session, Huffington post, Forbes, O’Reilly media, and so on. She received her B.Tech in Electrical Engineering from IIT Madras in 2004 and her PhD from Cornell University in 2009. She was a postdoctoral researcher at MIT from 2009 to 2010, an assistant professor at U.C. Irvine between 2010 and 2016, a visiting researcher at Microsoft Research New England in 2012 and 2014, a Principal Scientist at Amazon Web Services since 2016 and a Bren professor at Caltech since 2017.</p>
 
-          <h2 id="highlights">Highlights</h2>
+          <h2 id="highlights">Recent News</h2>
           <ul>
             <li>Si quae forte-possumus.</li>
             <li>Quaesita enim virtus est, non quae relinqueret naturam, sed quae tueretur.</li>
@@ -35,20 +39,23 @@
 
           <h2 id="publications">Selected Publications</h2>
           <ul>
-            <li>Si quae forte-possumus.</li>
-            <li>Quaesita enim virtus est, non quae relinqueret naturam, sed quae tueretur.</li>
-            <li>Conclusum est enim contra Cyrenaicos satis acute, nihil ad Epicurum.</li>
+            <li>Provable Tensor Methods for Learning Mixtures of Generalized Linear Models, Proceedings of AISTATS 2016.</li>
+            <li>Beating the Perils of Non-Convexity: Guaranteed Training of Neural Networks using Tensor Methods, arXiv:1506.08473, 2016.</li>
+            <li>Reinforcement Learning of POMDPs using Spectral Methods, arXiv:1602.07764, 2016.</li>
           </ul>
           <p><a href="publications.html">Complete list of publications</a></p>
 
           <h2 id="software">Software</h2>
           <ul>
-            <li>Si quae forte-possumus.</li>
-            <li>Quaesita enim virtus est, non quae relinqueret naturam, sed quae tueretur.</li>
-            <li>Conclusum est enim contra Cyrenaicos satis acute, nihil ad Epicurum.</li>
+            <li><strong>TensorLy</strong>, A fast and simple Python library for tensor learning. <a href="https://tensorly.github.io/">https://tensorly.github.io/</a></li>
+            <li><strong>Gluon</strong>, a high-level interface for MXNet designed to be easy to use while keeping most of the flexibility of low-level API. It supports both imperative and symbolic programming. <a href="https://mxnet.incubator.apache.org/api/python/gluon.html">https://mxnet.incubator.apache.org/api/python/gluon.html</a></li>
+            <li><strong>Spectral LDA on Spark</strong>, learning LDA model via tensor decomposition. <a href="https://github.com/Mega-DatA-Lab/SpectralLDA-Spark">https://github.com/Mega-DatA-Lab/SpectralLDA-Spark</a></li>
           </ul>
 
-          <h2 id="teaching">Teaching</h2>
+          <h2 id="tutorials">Tutorials</h2>
+          <ul>
+            <li><strong>MXNet and Gluon</strong>, notebooks for teaching Deep Learning, Apache MXNet and the Gluon interface. <a href="http://gluon.mxnet.io">http://gluon.mxnet.io</a></li>
+          </ul>
         </div>
       </div>
     </div>
