@@ -1,58 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Animashree Anandkumar's Publications</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <head>
+    <title>Animashree Anandkumar's Publications</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="site.css">
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-	</head>
-	<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Anima Anandkumar</a>
+      <a class="navbar-brand" href="index.html">Anima Anandkumar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">Features</a>
-          <a class="nav-item nav-link" href="#">Pricing</a>
+          <a class="nav-item nav-link" href="index.html#bio">Bio</a>
+          <a class="nav-item nav-link" href="index.html#publications">Publications</a>
+          <a class="nav-item nav-link" href="index.html#software">Software</a>
+          <a class="nav-item nav-link" href="index.html#tutorials">Tutorials</a>
+          <a class="nav-item nav-link" href="index.html#contact">Contact</a>
         </div>
       </div>
     </nav>
-		<div class="container">
-      <h2 class="my-3">All Publications</h2>
-			<div class="row">
-				<div class="col-lg-8">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="my-3">All Publications</h2>
           <p><input type="text" id="search" placeholder="Type to search" autocomplete="on" autofocus class="form-control"></p>
+          <ul id="myPublications" class='list-group'>
+            <li class="list-group-item">2017</li>
+            <li class="list-group-item">Tensor Regression Networks, CVPR 2017. <a href="pubs/tensor_regression_networks.pdf">pdf</a></li>
+            <li class="list-group-item">Spectral Latent Dirichlet Allocation model on Spark, 2017. <a href="https://github.com/Mega-DatA-Lab/SpectralLDA-Spark">github</a></li>
+            <li class="list-group-item">Reinforcement Learning in Rich-Observation MDPs using Spectral Methods, RLDM 2017. <a href="pubs/KamyarROMDP-SL-UC.pdf">pdf</a> <a href="pubs/KamyarPosterROMDP2017RLDM.pdf">poster</a></li>
+            <li class="list-group-item">Homotopy Analysis for Tensor PCA, COLT 2017. <a href="https://arxiv.org/abs/1610.09322">arxiv</a> <a href="slides/homotopy-slides.pdf">slides</a></li>
+            <li class="list-group-item">Spectral Methods for Correlated Topic Models, AISTATS 2017. <a href="http://proceedings.mlr.press/v54/arabshahi17a.html">url</a> <a href="https://arxiv.org/abs/1605.09080">arxiv</a> <a href="https://github.com/ForoughA/NID">code</a> <a href="ForoughArabshahi/CorrTM.pdf">poster</a> 
 
-					<ul id="myPublications" class='list-group'>
-						<li class="list-group-item"><a href="#">2017</a></li>
-						<li class="list-group-item"><a href="#">Tensor Decomposition</a></li>
-						<li class="list-group-item"><a href="#">Low-Rank Tensor Decomposition</a></li>
-						<li class="list-group-item"><a href="#">2016</a></li>
-						<li class="list-group-item"><a href="#">Non-Convex Optimisation</a></li>
-						<li class="list-group-item"><a href="#">Language Embedding</a></li>
-					</ul>
-				</div>
-			</div>
+            <li class="list-group-item">2016</li>
+            <li class="list-group-item">Learning Sparsely Used Overcomplete Dictionaries via Alternating Minimization, SIAM J. Optim., 26(4), 2016. <a href="http://epubs.siam.org/doi/abs/10.1137/140979861">url</a></li>
+            <li class="list-group-item">Experimental results: Reinforcement Learning of POMDPs using Spectral Methods, NIPS 2016 Workshop on Deep RL. <a href="pubs/NipsWorkshopPOMDP.pdf">pdf</a> <a href="pubs/POMnips2016poster.pdf">poster</a></li>
+            <li class="list-group-item">Online and Differentially-Private Tensor Decomposition, NIPS 2016. <a href="pubs/onlinetpm-arxiv.pdf">pdf</a></li>
+            <li class="list-group-item">Tensor Contractions with Extended BLAS Kernels on CPU and GPU, HiPC 2016. <a href="https://arxiv.org/abs/1606.05696">arxiv</a> <a href="pubs/tensorcontraction_poster.pdf">poster</a> <a href="https://devblogs.nvidia.com/parallelforall/cublas-strided-batched-matrix-multiply/">blog post</a></li>
+            <li class="list-group-item">PhD Thesis: Stochastic Optimization in High Dimension, Hanie Sedghi, 2016. <a href="pubs/thesis/Thesis_HanieSedghi.pdf">pdf</a></li>
+            <li class="list-group-item">PhD Thesis: Discovery of Latent Factors in High-dimensional Data Using Tensor Methods, Furong Huang, 2016. <a href="https://arxiv.org/abs/1606.03212">arxiv</a></li>
+            <li class="list-group-item">PhD Thesis: Non-convex Optimization in Machine Learning: Provable Guarantees Using Tensor Methods, Majid Janzamin, 2016. <a href="pubs/thesis/PhDthesis-MajidJanzamin.pdf">pdf</a></li>
+            <li class="list-group-item">Open Problem: Approximate Planning of POMDPs in the class of Memoryless Policies, COLT 2016. <a href="pubs/POMDP_Tensor_Open.pdf">pdf</a> <a href="https://www.youtube.com/watch?v=-GmdjGt5nBg">talk</a> <a href="pubs/COLT2016Open.pdf">slides</a></li>
+            <li class="list-group-item">Unsupervised Learning of Word-Sequence Representations from Scratch via Convolutional Tensor Decomposition, ACL 2016. <a href="pubs/phraseEmbedding.pdf">pdf</a> <a href="slides/acl2016.pdf">slides</a></li>
+            <li class="list-group-item">Training Input-Output Recurrent Neural Networks through Spectral Methods, 2016. <a href="pubs/Sedghi-RNN.pdf">pdf</a></li>
+            <li class="list-group-item">Reinforcement Learning of POMDPs using Spectral Methods, COLT 2016. <a href="pubs/POMDP_Tensor.pdf">pdf</a> <a href="https://www.youtube.com/watch?v=w7QCLFR8hJU">talk</a> <a href="pubs/COLT2016POMDP.pdf">slides</a></li>
+            <li class="list-group-item">Efficient approaches for escaping higher order saddle points in non-convex optimization, COLT 2016. <a href="http://arxiv.org/abs/1602.05908">arxiv</a> <a href="http://www.offconvex.org/2016/03/22/saddlepoints/">blog post</a></li>
+            <li class="list-group-item">Provable Tensor Methods for Learning Mixtures of Generalized Linear Models, AISTATS 2016. <a href="http://jmlr.org/proceedings/papers/v51/sedghi16.html">url</a></li>
+            <li class="list-group-item">Tensor vs Matrix Methods: Robust Tensor Decomposition under Block Sparse Perturbations, AISTATS 2016. <a href="pubs/robust_tensor_aistats.pdf">pdf</a> <a href="pubs/robust_tensor_poster.pdf">poster</a> <a href="slides/aistats16.pdf">slides</a></li>
 
-		</div>
-<script>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script>
 var $rows = $('#myPublications li');
 $('#search').keyup(function() {
-    var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
-    
-    $rows.show().filter(function() {
-        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
-        return text.indexOf(val) == -1;
-    }).hide();
-});
-</script>
+  var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
 
-	</body>
+  $rows.show().filter(function() {
+    var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+    return text.indexOf(val) == -1;
+  }).hide();
+});
+    </script>
+
+  </body>
 </html>
 
