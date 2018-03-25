@@ -37,18 +37,16 @@
 
             <script>
             function paper(context) {
-              if (context.code == undefined){
                 var newElem = document.createElement("li");
-                var newClass = "list-group-item";
-                newElem.className = newClass
-                newElem.innerHTML = '<div><b>"<strong>'+context.title+'</strong>"</b><br>&nbsp&nbsp'+context.authors+'<br><em>&nbsp&nbsp&nbsp&nbsp'+context.conf+'</em><br></div><div class="download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a></div>'
+                newElem.className = "list-group-item"
+                newElem.innerHTML = '<div><b>"<strong>'+context.title+'</strong>"</b><br>&nbsp&nbsp'+context.authors+'<br><em>&nbsp&nbsp&nbsp&nbsp'+context.conf+'</em><br></div><div class="download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a></div>';
                 var container = document.getElementById("myPublications");
-                } 
-              }
-              context = {title:"Stochastic",authors:"Guneet S. Dhillon, Kamyar Azizzadenesheli, Zachary C. Lipton, Jeremy Bernstein, Jean Kossaifi, Aran Khanna, Anima Anandkumar", conf: "Appeared at ICLR 2018, Vancouver, Canada",href:"https://openreview.net/pdf?id=H1uR4GZRZ"}
-              
-              peper(context)
-              </script>
+                container.appendChild(newElem);
+            }
+            context = {title:"Stochastic",authors:"Guneet S. Dhillon, Kamyar Azizzadenesheli, Zachary C. Lipton, Jeremy Bernstein, Jean Kossaifi, Aran Khanna, Anima Anandkumar", conf: "Appeared at ICLR 2018, Vancouver, Canada",href:"https://openreview.net/pdf?id=H1uR4GZRZ"}
+            paper(context)
+
+            </script>
             
             <font size="+3"><li class="list-group-item">2018</li></font>
             
