@@ -34,21 +34,23 @@
           <h2 class="my-3">All Publications</h2>
           <p><input type="text" id="search" placeholder="Type to search" autocomplete="on" autofocus class="form-control"></p>
           <ul id="myPublications" class='list-group'>
-
+            <font size="+3"><li class="list-group-item">2018</li></font>
             <script>
             function paper(context) {
+              if (context.code == undefined){
                 var newElem = document.createElement("li");
                 newElem.className = "list-group-item"
                 newElem.innerHTML = '<div><b>"<strong>'+context.title+'</strong>"</b><br>&nbsp&nbsp'+context.authors+'<br><em>&nbsp&nbsp&nbsp&nbsp'+context.conf+'</em><br></div><div class="download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a></div>';
                 var container = document.getElementById("myPublications");
-                container.appendChild(newElem);
+                container.appendChild(newElem);}
             }
-            context = {title:"Stochastic",authors:"Guneet S. Dhillon, Kamyar Azizzadenesheli, Zachary C. Lipton, Jeremy Bernstein, Jean Kossaifi, Aran Khanna, Anima Anandkumar", conf: "Appeared at ICLR 2018, Vancouver, Canada",href:"https://openreview.net/pdf?id=H1uR4GZRZ"}
+              
+              
+            context = {title:"Stochastic Activation Pruning for Robust Adversarial Defense",authors:"Guneet S. Dhillon, Kamyar Azizzadenesheli, Zachary C. Lipton, Jeremy Bernstein, Jean Kossaifi, Aran Khanna, Anima Anandkumar", conf: "Appeared at ICLR 2018, Vancouver, Canada",href:"https://openreview.net/pdf?id=H1uR4GZRZ"}
             paper(context)
 
             </script>
             
-            <font size="+3"><li class="list-group-item">2018</li></font>
             
             
                 <!--            <li  class = "list-group-item">
