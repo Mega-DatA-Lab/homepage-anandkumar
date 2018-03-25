@@ -37,16 +37,35 @@
             <font size="+3"><li class="list-group-item">2018</li></font>
             <script>
             function paper(context) {
-              if (context.code == undefined){
-                var newElem = document.createElement("li");
-                newElem.className = "list-group-item"
-                newElem.innerHTML = '<div><b>"<strong>'+context.title+'</strong>"</b><br>&nbsp&nbsp'+context.authors+'<br><em>&nbsp&nbsp&nbsp&nbsp'+context.conf+'</em><br></div><div class="download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a></div>';
-                var container = document.getElementById("myPublications");
-                container.appendChild(newElem);}
+              var newElem = document.createElement("li");
+              newElem.className = "list-group-item"
+              newElem.innerHTML = '<div><b>"<strong>'+context.title+'</strong>"</b><br>&nbsp&nbsp'+context.authors+'<br>'
+              if (context.conf){
+                newElem.innerHTML = newElem.innerHTML + '<em>&nbsp&nbsp&nbsp&nbsp'+context.conf+'</em><br></div><div class="download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a>'
+              } else{
+                 newElem.innerHTML = newElem.innerHTML + '</div><div class="download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a>'}
+              if (context.code){
+                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.code+' style="text-decoration:none">[Code]</a>'}
+              if (context.ipython){
+                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.ipython+' style="text-decoration:none">[Ipython]</a>'}
+              if (context.poster){
+                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.poster+' style="text-decoration:none">[Poster]</a>'}
+              if (context.slides){
+                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.slides+' style="text-decoration:none">[Slides]</a>'}
+              if (context.talk){
+                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.talk+' style="text-decoration:none">[Talk]</a>'}
+              if (context.blog){
+                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.blog+' style="text-decoration:none">[Blog Post]</a>'}
+              if (context.page){
+                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.page+' style="text-decoration:none">[Project Page]</a>'}
+
+              newElem.innerHTML = newElem.innerHTML + '</div>'  
+              var container = document.getElementById("myPublications");
+              container.appendChild(newElem);
             }
               
               
-            context = {title:"Stochastic Activation Pruning for Robust Adversarial Defense",authors:"Guneet S. Dhillon, Kamyar Azizzadenesheli, Zachary C. Lipton, Jeremy Bernstein, Jean Kossaifi, Aran Khanna, Anima Anandkumar", conf: "Appeared at ICLR 2018, Vancouver, Canada",href:"https://openreview.net/pdf?id=H1uR4GZRZ"}
+            context = {title:"Stochastic Activation Pruning for Robust Adversarial Defense",authors:"Guneet S. Dhillon, Kamyar Azizzadenesheli, Zachary C. Lipton, Jeremy Bernstein, Jean Kossaifi, Aran Khanna, Anima Anandkumar", conf: "Appeared at ICLR 2018, Vancouver, Canada",href:"https://openreview.net/pdf?id=H1uR4GZRZ", code:"https://github.com/Guneet-Dhillon/Stochastic-Activation-Pruning"}
             paper(context)
 
             </script>
@@ -205,7 +224,7 @@
                 &nbsp&nbsp Furong Huang, Jencir Lee, and Anima Anandkumar<br>
                 </em>
                 </div>
-                <div class = "download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href="https://github.com/Mega-DatA-Lab/SpectralLDA-Spark/blob/master/report.pdf"><img src="images/YT/img_pdf" alt="" width="30" height="30">White paper 2017</a> &nbsp;&nbsp;<a href="https://github.com/Mega-DatA-Lab/SpectralLDA-Spark" style="text-decoration:none">[github]</a></div>
+                <div class = "download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href="https://github.com/Mega-DatA-Lab/SpectralLDA-Spark/blob/master/report.pdf"><img src="images/YT/img_pdf" alt="" width="30" height="30">White paper 2017</a> &nbsp;&nbsp;<a href="https://github.com/Mega-DatA-Lab/SpectralLDA-Spark" style="text-decoration:none">[Code]</a></div>
                 </li>
             
                 <li  class = "list-group-item">
