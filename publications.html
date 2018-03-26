@@ -34,6 +34,7 @@
           <h2 class="my-3">All Publications</h2>
           <p><input type="text" id="search" placeholder="Type to search" autocomplete="on" autofocus class="form-control"></p>
           <ul id="myPublications" class='list-group'>
+            <font size="+3"><li class="list-group-item">2018</li></font>
             <script>
             function paper(context) {
               var newElem = document.createElement("li");
@@ -62,8 +63,7 @@
               var container = document.getElementById("myPublications");
               container.appendChild(newElem);
             }
-              
-            <font size="+3"><li class="list-group-item">2018</li></font>
+                         
               
             context = {title:"Stochastic Activation Pruning for Robust Adversarial Defense",
                        authors:"Guneet S. Dhillon, Kamyar Azizzadenesheli, Zachary C. Lipton, Jeremy Bernstein, Jean Kossaifi, Aran Khanna, Anima Anandkumar",
