@@ -34,25 +34,47 @@
           <h2 class="my-3">All Publications</h2>
           <p><input type="text" id="search" placeholder="Type to search" autocomplete="on" autofocus class="form-control"></p>
           <ul id="myPublications" class='list-group'>
-            
             <font size="+3"><li class="list-group-item">2018</li></font>
-            
-            
-                <!--            <li  class = "list-group-item">
-                <div>"<strong>Stochastic Activation Pruning for Robust Adversarial Defense</strong>"</b><br/>
-                &nbsp&nbsp Guneet S. Dhillon, Kamyar Azizzadenesheli, Zachary C. Lipton, Jeremy Bernstein, Jean Kossaifi, Aran Khanna, Anima Anandkumar<br>
-                </em><em>&nbsp&nbsp&nbsp&nbsp Appeared at ICLR 2018, Vancouver, Canada<br</em>
-                </div>
-                <div class = "download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href="https://openreview.net/pdf?id=H1uR4GZRZ"><img src="images/YT/img_pdf" alt="" width="30" height="30"></a>&nbsp;&nbsp;<a href="https://openreview.net/pdf?id=H1uR4GZRZ" style="text-decoration:none">[Poster]</a>&nbsp;&nbsp; <a href="pubs/SMvsDQN.flv" style="text-decoration:none">[Animation]</a>&nbsp;&nbsp;</div>>-->
+            <script>
+            function paper(context) {
+              var newElem = document.createElement("li");
+              newElem.className = "list-group-item"
+              newElem.innerHTML = '<b>"<strong>'+context.title+'</strong>"</b><br>&nbsp&nbsp'+context.authors+'<br>'
+              if (context.conf){
+                newElem.innerHTML = '<div>' + newElem.innerHTML + '<em>&nbsp&nbsp&nbsp&nbsp'+context.conf+'</em></div>'
+              } else{
+                 newElem.innerHTML = '<div>' + newElem.innerHTML + '</div>'}
+              slack_var = '<span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a>'
+              if (context.code){
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.code+' style="text-decoration:none">[Code]</a>'}
+              if (context.ipython){
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.ipython+' style="text-decoration:none">[Ipython]</a>'}
+              if (context.poster){
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.poster+' style="text-decoration:none">[Poster]</a>'}
+              if (context.slides){
+                slack_var = slack_varL + '&nbsp;&nbsp;<a href='+context.slides+' style="text-decoration:none">[Slides]</a>'}
+              if (context.talk){
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.talk+' style="text-decoration:none">[Talk]</a>'}
+              if (context.blog){
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.blog+' style="text-decoration:none">[Blog Post]</a>'}
+              if (context.page){
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.page+' style="text-decoration:none">[Project Page]</a>'}
 
+              newElem.innerHTML = newElem.innerHTML + '<div class = "download">' + slack_var + '</div>'  
+              var container = document.getElementById("myPublications");
+              container.appendChild(newElem);
+            }
+                         
+//             context = {title,authors,conf,href,code,ipython,poster,slides,talk,blog,page}  
+            context = {title:"Stochastic Activation Pruning for Robust Adversarial Defense",
+                       authors:"Guneet S. Dhillon, Kamyar Azizzadenesheli, Zachary C. Lipton, Jeremy Bernstein, Jean Kossaifi, Aran Khanna, Anima Anandkumar",
+                       conf: "Appeared at ICLR 2018, Vancouver, Canada",
+                       href:"https://openreview.net/pdf?id=H1uR4GZRZ",
+                       code:"https://github.com/Guneet-Dhillon/Stochastic-Activation-Pruning"}
+            paper(context)
+
+            </script>
               
-                <li  class = "list-group-item">
-                <div><b>"<strong>Stochastic Activation Pruning for Robust Adversarial Defense</strong>"</b><br/>
-                &nbsp&nbsp Guneet S. Dhillon, Kamyar Azizzadenesheli, Zachary C. Lipton, Jeremy Bernstein, Jean Kossaifi, Aran Khanna, Anima Anandkumar<br>
-                <em>&nbsp&nbsp&nbsp&nbsp Appeared at ICLR 2018, Vancouver, Canada</em><br>
-                </div>
-                <div class = "download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href="https://openreview.net/pdf?id=H1uR4GZRZ"><img src="images/YT/img_pdf" alt="" width="30" height="30"></a> &nbsp;&nbsp;<a href="https://github.com/Guneet-Dhillon/Stochastic-Activation-Pruning" style="text-decoration:none">[Code]</a> </div>
-                </li>
           
       
                 <li  class = "list-group-item">
@@ -101,6 +123,7 @@
             
             <font size="+3"><li class="list-group-item">2017</li></font>
 
+
                 <li  class = "list-group-item">
                 <div><b>"<strong>Efficient Exploration through Bayesian Deep Q-Networks</strong>"</b><br/>
                 &nbsp&nbsp Kamyar Azizzadenesheli, Emma Brunskill, Animashree Anandkumar<br>
@@ -133,11 +156,11 @@
                 &nbsp&nbsp Rose Yu, Stephan Zheng, Anima Anandkumar, Yisong Yue<br>
                 </em>
                 </div>
-                <div class = "download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href="https://arxiv.org/pdf/1711.00073.pdf"><img src="images/YT/img_pdf" alt="" width="30" height="30"></a> </div>
+                <div class = "download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href="https://arxiv.org/pdf/1711.00073.pdf"><img src="images/YT/img_pdf" alt="" width="30" height="30"></a> &nbsp;&nbsp;<a href="https://github.com/yuqirose/tensor_train_RNN" style="text-decoration:none">[Code]</a></div>
                 </li>
 
                 <li  class = "list-group-item">
-                <div>"<strong>Tensor Contraction & Regression Networks</strong>"</b><br/>
+                <div>"<strong>Tensor Regression Networks</strong>"</b><br/>
                 &nbsp&nbsp Jean Kossaifi, Zack Chase Lipton, Aran Khanna, Tommaso Furlanello, Anima Anandkumar<br>
                 </em>
                 </div>
@@ -190,7 +213,7 @@
                 &nbsp&nbsp Furong Huang, Jencir Lee, and Anima Anandkumar<br>
                 </em>
                 </div>
-                <div class = "download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href="https://github.com/Mega-DatA-Lab/SpectralLDA-Spark/blob/master/report.pdf"><img src="images/YT/img_pdf" alt="" width="30" height="30">White paper 2017</a> &nbsp;&nbsp;<a href="https://github.com/Mega-DatA-Lab/SpectralLDA-Spark" style="text-decoration:none">[github]</a></div>
+                <div class = "download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href="https://github.com/Mega-DatA-Lab/SpectralLDA-Spark/blob/master/report.pdf"><img src="images/YT/img_pdf" alt="" width="30" height="30">White paper 2017</a> &nbsp;&nbsp;<a href="https://github.com/Mega-DatA-Lab/SpectralLDA-Spark" style="text-decoration:none">[Code]</a></div>
                 </li>
             
                 <li  class = "list-group-item">
