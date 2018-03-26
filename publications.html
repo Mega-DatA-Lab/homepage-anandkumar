@@ -41,25 +41,26 @@
               newElem.className = "list-group-item"
               newElem.innerHTML = '<b>"<strong>'+context.title+'</strong>"</b><br>&nbsp&nbsp'+context.authors+'<br>'
               if (context.conf){
-                newElem.innerHTML = '<div>' + newElem.innerHTML + '<em>&nbsp&nbsp&nbsp&nbsp'+context.conf+'</em></div><br><div class="download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a>'
+                newElem.innerHTML = '<div>' + newElem.innerHTML + '<em>&nbsp&nbsp&nbsp&nbsp'+context.conf+'</em></div>'
               } else{
-                 newElem.innerHTML = '<div>' + newElem.innerHTML + '</div><div class="download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a>'}
+                 newElem.innerHTML = '<div>' + newElem.innerHTML + '</div>'}
+              slack_var = '<span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a>'
               if (context.code){
-                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.code+' style="text-decoration:none">[Code]</a>'}
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.code+' style="text-decoration:none">[Code]</a>'}
               if (context.ipython){
-                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.ipython+' style="text-decoration:none">[Ipython]</a>'}
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.ipython+' style="text-decoration:none">[Ipython]</a>'}
               if (context.poster){
-                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.poster+' style="text-decoration:none">[Poster]</a>'}
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.poster+' style="text-decoration:none">[Poster]</a>'}
               if (context.slides){
-                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.slides+' style="text-decoration:none">[Slides]</a>'}
+                slack_var = slack_varL + '&nbsp;&nbsp;<a href='+context.slides+' style="text-decoration:none">[Slides]</a>'}
               if (context.talk){
-                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.talk+' style="text-decoration:none">[Talk]</a>'}
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.talk+' style="text-decoration:none">[Talk]</a>'}
               if (context.blog){
-                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.blog+' style="text-decoration:none">[Blog Post]</a>'}
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.blog+' style="text-decoration:none">[Blog Post]</a>'}
               if (context.page){
-                newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.page+' style="text-decoration:none">[Project Page]</a>'}
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.page+' style="text-decoration:none">[Project Page]</a>'}
 
-              newElem.innerHTML = newElem.innerHTML + '</div>'  
+              newElem.innerHTML = newElem.innerHTML + '<div class = "download">' + slack_var + '</div>'  
               var container = document.getElementById("myPublications");
               container.appendChild(newElem);
             }
