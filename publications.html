@@ -39,11 +39,11 @@
             function paper(context) {
               var newElem = document.createElement("li");
               newElem.className = "list-group-item"
-              newElem.innerHTML = '<div><b>"<strong>'+context.title+'</strong>"</b><br>&nbsp&nbsp'+context.authors+'<br>'
+              newElem.innerHTML = '<b>"<strong>'+context.title+'</strong>"</b><br>&nbsp&nbsp'+context.authors+'<br>'
               if (context.conf){
-                newElem.innerHTML = newElem.innerHTML + '<em>&nbsp&nbsp&nbsp&nbsp'+context.conf+'</em></div><br><div class="download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a>'
+                newElem.innerHTML = '<div>' + newElem.innerHTML + '<em>&nbsp&nbsp&nbsp&nbsp'+context.conf+'</em></div><br><div class="download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a>'
               } else{
-                 newElem.innerHTML = newElem.innerHTML + '</div><div class="download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a>'}
+                 newElem.innerHTML = '<div>' + newElem.innerHTML + '</div><div class="download"><span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a>'}
               if (context.code){
                 newElem.innerHTML = newElem.innerHTML + '&nbsp;&nbsp;<a href='+context.code+' style="text-decoration:none">[Code]</a>'}
               if (context.ipython){
@@ -69,8 +69,7 @@
                        authors:"Guneet S. Dhillon, Kamyar Azizzadenesheli, Zachary C. Lipton, Jeremy Bernstein, Jean Kossaifi, Aran Khanna, Anima Anandkumar",
                        conf: "Appeared at ICLR 2018, Vancouver, Canada",
                        href:"https://openreview.net/pdf?id=H1uR4GZRZ",
-                       code:"https://github.com/Guneet-Dhillon/Stochastic-Activation-Pruning",
-                       ipython:"https://github.com/Guneet-Dhillon/Stochastic-Activation-Pruning"}
+                       code:"https://github.com/Guneet-Dhillon/Stochastic-Activation-Pruning"}
             paper(context)
 
             </script>
