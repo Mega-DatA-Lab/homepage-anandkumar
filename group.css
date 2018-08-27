@@ -9,28 +9,6 @@
     background-color: #F8F8F8;
 }
 
-.peopletaller{
-    position: relative;
-    height: 10%;
-    width: 49%;
-    border:1px solid #C0C0C0;
-    border-radius:10px;
-    margin: 0px 0px 5px 0px;
-    float:left;
-    background-color: #F8F8F8;
-}
-
-.peopleInfotaller{
-    position: relative;
-    display: inherit;
-       margin: 0px 2.5% 0px 0px;
-     margin-left: -moz-calc(5%+150px);
-    margin-left: -webkit-calc(5%+150px);
-    margin-left: calc(5%+150px);
-    height: 150px;
-   
-    padding-top: 10px;
-}
 .peopleDP{
     position: relative;
     display: inherit;
