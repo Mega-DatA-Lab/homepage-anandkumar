@@ -23,12 +23,12 @@
     position: relative;
     display: inherit;
        margin: 0px 2.5% 0px 0px;
-     margin-left: -moz-calc(5% + 150px);
-    margin-left: -webkit-calc(5% + 150px);
-    margin-left: calc(5% + 150px);
+     margin-left: -moz-calc(5%+150px);
+    margin-left: -webkit-calc(5%+150px);
+    margin-left: calc(5%+150px);
     height: 150px;
    
-    padding-top: 35px;
+    padding-top: 10px;
 }
 
 .name{
