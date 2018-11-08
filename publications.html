@@ -49,6 +49,8 @@
               slack_var = '<span class="smallText">Download:</span> &nbsp;<a target="_blank" href='+context.href+'><img src="images/YT/img_pdf" alt="" width="30" height="30"></a>'
               if (context.code){
                 slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.code+' style="text-decoration:none">[Code]</a>'}
+              if (context.package){
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.code+' style="text-decoration:none">[Package]</a>'}
               if (context.ipython){
                 slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.ipython+' style="text-decoration:none">[Ipython]</a>'}
               if (context.poster){
@@ -68,7 +70,15 @@
             }
                          
 //             context = {title,authors,conf,href,code,ipython,poster,slides,talk,blog,page}  
-
+            context = {title:"Surprising Negative Results for Generative Adversarial Tree Search",
+                       authors:" Kamyar Azizzadenesheli, Brandon Yang, Weitang Liu, Emma Brunskill , Zachary C. Lipton, Animashree Anandkumar",
+                       href:"https://arxiv.org/abs/1810.05291",
+		       conf: "Under review",
+		       code:"https://github.com/kazizzad/GATS",
+		       package:"https://github.com/bclyang/updated-atari-env"
+		       }
+            paper(context)		    
+		    
             context = {title:"signSGD is Communication Efficient and Byzantine Fault Tolerant",
                        authors:"Jeremy Bernstein, Jiawei Zhao, Kamyar Azizzadenesheli, Anima Anandkumar",
                        href:"https://arxiv.org/abs/1810.05291",
