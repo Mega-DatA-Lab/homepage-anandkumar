@@ -63,6 +63,8 @@
                 slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.blog+' style="text-decoration:none">[Blog Post]</a>'}
               if (context.page){
                 slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.page+' style="text-decoration:none">[Project Page]</a>'}
+	      if (context.demo){
+                slack_var = slack_var + '&nbsp;&nbsp;<a href='+context.demo+' style="text-decoration:none">[Demo]</a>'}
 
               newElem.innerHTML = newElem.innerHTML + '<div class = "download">' + slack_var + '</div>'  
               var container = document.getElementById("myPublications");
@@ -82,6 +84,8 @@
                        authors:"Guanya Shi, Xichen Shi, Michael O'Connell, Rose Yu, Kamyar Azizzadenesheli, Animashree Anandkumar, Yisong Yue, Soon-Jo Chung",
                        href:"https://arxiv.org/abs/1811.08027?fbclid=IwAR3munPANhzFM4Cei7thR4GhVS9et7upUqOb-Al_ldV8CJlMIBOfL1zCWaY",
 		       conf: "Appeared at NeurIPS 2018 workshop: Imitation Learning and its Challenges in Robotics",
+		       poster:"slides/stable-drone.jpg",
+		       demo:"https://www.youtube.com/watch?v=C_K8MkC_SSQ"
 		       poster:"slides/stable-drone.jpg",
 		       }
             paper(context)
