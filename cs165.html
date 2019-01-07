@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>CS 165</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">CS/CNS/EE/IDS 165: Foundations of Machine Learning</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <!-- <a class="nav-item nav-link" href="#bio">Bio</a> -->
+          <a class="nav-item nav-link" href="#course">Course Description</a>
+          <a class="nav-item nav-link" href="#details">Course Details</a>
+          <a class="nav-item nav-link" href="#assignments">Assignments</a>
+          <a class="nav-item nav-link" href="#schedule">Schedule</a>
+          <a class="nav-item nav-link" href="#lectures">Lectures</a>
+          <a class="nav-item nav-link" href="#oh">Office Hours</a>
+          <a class="nav-item nav-link" href="http://tensorlab.cms.caltech.edu/users/anima/">Anima's Homepage</a>
+        </div>
+      </div>
+    </nav>
+
+        </div>
+
+        <div class="col-lg-8">
+          <h3 id="course">Course Description</h3>
+          <p align="justify">
+          Machine learning is promising to revolutionize every domain. Beyond the media hype, what are the basic foundations? Are the theoretical underpinnings irrelevant given the success of deep learning? What does success even mean? In addition to covering the core concepts, the course aims to ask such critical questions and foster a healthy debate among the students. Assignments will include exploring failure modes of popular algorithms, in addition to traditional problem-solving type questions. The core concepts covered include: linear models, kernel methods, probabilistic models, spectral methods (matrices and tensors), neural networks representation theory, non-convex optimization, generalization in deep neural networks, causality etc. The course assumes students are comfortable with analysis, probability, statistics, and basic programming.
+          </p>
+
+          <h3 id="details">Course Details</h3>
+          <ul>
+            <li>Lectures on Tu/Th at 1pm-2:30pm in Moore B270
+            <li>Recitations TBA
+            <li>We will be using Piazza for discussion forums and announcements <a href="https://piazza.com/class/jq1tbyrptsw6ce">[link]</a></li>
+            <li>We will be using Moodle for managing homeworks and grades <a href="https://moodle">[link]</a></li>
+          </ul>
+
+
+            <h4>Grading</h4>
+            <ul>
+              <li>7 Assignments (35% of final grade)  See the Grading Policy below
+              <li>1 Midterm Project (20% of final grade)
+              <li>1 Final Project (30% of final grade)
+              <li>Preparing Scribe Notes (10% of final grade)
+              <li>Participation in class and on Piazza (5% of final grade)
+            </ul>
+
+            <h4>Late Assignment Policy</h4>
+            <p>Assignments will be due at 4pm on Friday via Moodle. Students are allowed to use up to 48 late hours. Late hours must be used in units of hours. Specify the number of hours used when turning in the assignment. Late hours cannot be used on the projects. There will be no TA support over the weekends. </p>
+
+            <h4>Homework Grading Policy</h4>
+            <p>Peer grading will be used in this class. You will be assigned to
+              grade the assignment of one of your classmates. <b>20%</b> of your assignment grade
+              will be based on the accuracy of your grading your peers assignment.
+              If the grade you give to your assigned homework is within 2 points of the true grade
+              you will get 20 points for peer grading of that assignment. If it's within 4 points you will
+              receive 19 and if it's within 6 points you get 18 and so on. If it's off more than 40
+              points your peer grading score from that assignment will be 0.</p>
+
+            <p>Finally, you will be given 3 random assignments of your classmates. Without giving scores, you will only rank
+              them in order in between each other without from what you think it will get the highest grade to the lowest.
+              This will constitute <b>5%</b> of your assignment grade. </p>
+
+            <h4>Collaboration Policy</h4>
+            <p><b>Homeworks</b>: (taken from CS 1) It is common for students to discuss ideas for the homework assignments. When you are helping another student with their homework, you are acting as an unofficial teaching assistant, and thus must behave like one. Do not just answer the question or dictate the code to others. If you just give them your solution or code, you are violating the Honor Code. As a way of clarifying how you can help and/or discuss ideas with other students (especially when it comes to coding and proofs), we want you to obey the "50 foot rule". This rule states that your own solution should be at least <b>50 feet away </b>. If you are helping another students but cannot without consulting your solution, don't help them, and refer them instead to a teaching assistant. </p>
+
+            <p><b>Projects</b>:  Students are allowed to collaborate fully within their project teams, but no collaboration is allowed between teams.
+
+            <h4>Teaching Assistants</h4>
+            <p class="indented">
+            <table class="indented">
+              <tr>
+                <td>Ehsan Abbasi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td> eabbasi@caltech.edu </td>
+              </tr>
+              <tr>
+                <td> Gautam Goel </td><td> ggoel@caltech.edu</td>
+              </tr>
+              <tr>
+                <td> Sahin Lale </td><td> alale@caltech.edu </td>
+              </tr>
+            </table>
+            </p>
+
+            <!--<ul>
+            <li>Ehsan Abbasi &nbsp;&nbsp;&nbsp;&nbsp; eabbasi@caltech.edu
+            <li>Gautam Goel &nbsp;&nbsp;&nbsp;&nbsp;  ggoel@caltech.edu
+            <li>Sahin Lale &nbsp;&nbsp;&nbsp;&nbsp;   alale@caltech.edu
+            </ul> -->
+
+          <h3 id="assignments">Assignments</h3>
+            <ul>
+              <li><a href="https://piazza.com/class/jq1tbyrptsw6ce">Assignment 1</a>
+              <!--<li>1 Midterm Project (20% of final grade)
+              <li>1 Final Project (30% of final grade)
+              <li>Preparing Scribe Notes (10% of final grade)
+              <li>Participation in class and on Piazza (5% of final grade) -->
+            </ul>
+
+
+          <h3 id="schedule">Schedule</h3>
+          <p class="indented">
+          <table class="indented">
+            <tr> <td> Week 0.5:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td><td> Introduction </td> </tr>
+            <tr> <td> Week 1-1.5: </td><td> Optimization</td> </tr>
+            <tr> <td> Week 1.5-3: </td><td> Spectral Methods </td> </tr>
+            <tr> <td> Week 4:  </td><td> Initial presentation and proposal for projects(midterm)</td> </tr>
+            <tr> <td> Week 5:  </td><td> Representation Theory </td> </tr>
+            <tr> <td> Week 6:  </td><td> Generalization </td> </tr>
+            <tr> <td> Week 7:  </td><td> Generative models </td> </tr>
+            <tr> <td> Week 8:  </td><td> Active/interactive learning </td> </tr>
+            <tr> <td> Week 9:  </td><td> Domain Adaptation/lifelong learning </td> </tr>
+            <tr> <td> Week 9:  </td><td> Final presentation </td> </tr>
+          </table>
+          </p>
+          <!--    <li>Week 0.5: Introduction.
+              <li>Week 1-1.5: Optimization.
+              <li>Week 1.5 - 3: Spectral Methods
+              <li>Week 4: Initial presentation and proposal for projects (midterm)
+              <li>Week 5: Representation theory
+              <li>Week 6: Generalization
+              <li>Week 7: Generative models
+              <li>Week 8: Active/interactive learning
+              <li>Week 9: Domain Adaptation/lifelong learning
+              <li>Week 10: Final presentation
+            </ul> -->
+
+          <h3 id="lectures">Lectures</h3>
+          <p> Lecture slides will be here with the links to course recordings. </p>
+
+          <h3 id="oh">Office Hours</h3>
+          <p> TBA   </p>
+<!--
+          <h3>For Prospective Students</h3>
+          <p>We are looking for highly motivated and self-driven MS/PhD students with a strong mathematical background in machine learning, probability, statistics, algorithms and graph theory. We are also interested in having post-doctoral researchers with an interest in high-dimensional learning.</p>
+
+
+          <h3 id="contact">Contact</h3>
+          <p>Email: <kbd>anima * caltech.edu</kbd><br>
+          Admin: Sabrina Pirzada <kbd>spirzada * cms.caltech.edu</kbd><br>  spirzada@cms.caltech.edu
+          <strong>Please cc Sabrina for appointments</strong>.</p>
+          <address>
+            Department of Computing and Mathematical Sciences <br>
+            California Institute of Technology<br>
+            316 Annenberg Hall<br>
+            1200 E California Blvd. MC 305-16, Pasadena, CA 91125
+          </address>
+-->
+
+        </div>
+          <!--div class="col-lg-6 offset-lg-3">
+          <a class="twitter-timeline" data-height="400" href="https://twitter.com/AnimaAnandkumar">Tweets by AnimaAnandkumar</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
