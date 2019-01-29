@@ -37,6 +37,7 @@
           <h2 class="my-3">All Publications</h2>
           <p><input type="text" id="search" placeholder="Type to search" autocomplete="on" autofocus class="form-control"></p>
           <ul id="myPublications" class='list-group'>
+            <font size="+3"><li class="list-group-item">2019</li></font>
             <script>
             function paper(context) {
               var newElem = document.createElement("li");
@@ -73,13 +74,14 @@
                          
 //             context = {title,authors,conf,href,code,ipython,poster,slides,talk,blog,page}  
 		    
-		    
-            <font size="+3"><li class="list-group-item">2018</li></font>
+
+
             context = {title:"Active Learning with Partial Feedback",
                        authors:"Peiyun Hu, Zachary C. Lipton, Anima Anandkumar, Deva Ramanan",
                        conf: "Appeared at International Conference on Learning Representations (ICLR) 2019",
                        href:"https://openreview.net/pdf?id=ry018WZAZ"}
             paper(context)
+            <font size="+3"><li class="list-group-item">2018</li></font>
 
             context = {title:"Regularized Learning for Domain Adaptation under Label Shifts",
                        authors:"Kamyar Azizzadenesheli, Anqi Liu, Fanny Yang, Animashree Anandkumar",
